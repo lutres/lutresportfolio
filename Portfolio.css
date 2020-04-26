@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    width: 100%;
+    background: rgb(112,112,112);
+    background: linear-gradient(315deg, rgba(112,112,112,1) 0%, rgba(41,128,185,1) 100%);
+    font-family: 'Source Code Pro', monospace;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    font-size: medium;
+    text-align: center;
+}
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 1%;
+}
+nav a {
+    position: relative;
+    top: -1px;
+    transform: scale(4);
+    margin: 0;
+    padding: 3.5px 11px 2px 11px;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    color: #2980b9;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(50,50,50,0.65);
+-moz-box-shadow: 0px 1px 5px 0px rgba(50,50,50,0.65);
+box-shadow: 0px 1px 5px 0px rgba(50,50,50,0.65);
+}
+nav::after{
+    position: fixed;
+    top: 0%;
+}
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.title h1 {
+    position: relative;
+    font-size: x-large;
+    text-align: center;
+    width: fit-content;
+    border: 1px solid lightgray;
+    border-bottom: 5px solid rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(10,10,10,0.65);
+-moz-box-shadow: 0px 1px 5px 0px rgba(10,10,10,0.65);
+box-shadow: 0px 1px 5px 0px rgba(10,10,10,0.65);
+}
+.info {
+    display: flex;
+}
+#abt-info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
+}
+#abt-services {
+    width: 50%;
+    padding-right: 1%;
+    border-right: 3px solid rgba(0,0,0,0.6);
+    text-align: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+}
+section {
+    margin-bottom: 7% ;
+    width: 95%;
+    height: fit-content;
+}
+#abt-services h1{
+    font-size: large;
+}
+#services-img {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.services-img {
+    position: relative;
+    transform: scale(1);
+    padding: 0;   
+}
+#proyects {
+    display: inline-block;
+}
+.personal-proyects {
+    display: block;
+}
+.pp-sec{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#pp-sec1 {
+    margin-bottom: 10%;
+}
+.proyect {
+    width: 30%;
+    height: auto;
+    border: white solid 1px;
+    border-bottom: 5px solid black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(10,10,10,0.65);
+-moz-box-shadow: 0px 1px 5px 0px rgba(10,10,10,0.65);
+box-shadow: 0px 1px 5px 0px rgba(10,10,10,0.65);
+}
+.proyect img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.proyect:hover {
+    background-color: #2980b9;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5%;
+}
+.social i::before {
+    padding: 0;
+    transform: scale(3);
+}
+#contact {
+    margin-bottom: 0;
+}
+.fi-social-facebook:hover {
+    color: 	#4267B2;
+}
+.fi-social-instagram:hover {
+    color: 	#405DE6;
+}
+.fi-social-twitter:hover {
+    color: #1da1f2;
+}
+.social .fi-mail:hover {
+    color: white;
+}
+@media (max-width: 990px) {
+    #services-img {
+        display: block;
+    }
+    #services-img img{
+        transform: scale(0.5);
+    }
+}
+@media (max-width: 780px) {
+    .info {
+        flex-direction: column;
+    }
+    #services-img {
+        display: flex;
+        border-bottom: 3px solid rgba(0,0,0,0.6);
+    }
+    #abt-services, #abt-info {
+        width: 100%;
+        border: none;
+        text-align: center;
+        margin-right: 0;
+    }
+
+}
